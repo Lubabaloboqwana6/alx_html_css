@@ -1,0 +1,51 @@
+@font-face {
+  src: url(fonts/source-sans-pro.bold.ttf);
+  font-family: "source-sans-pro";
+}
+
+ul {
+  font-family: "source-sans-pro";
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+header {
+  padding: 20px 40px;
+}
+body {
+  background-image: url(images/Object.png);
+}
+.container {
+  text-align: center;
+  color: #ffffff;
+}
+.container > button {
+  display: block;
+  margin: 10px auto;
+  color: #ffffff;
+  background-color: #c271ff;
+  border-radius: 15px;
+  border-style: none;
+  padding: 10px 5px;
+}
+h1 {
+  font-size: 120px;
+}
+div span {
+  padding: 20px;
+}
