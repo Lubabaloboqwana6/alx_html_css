@@ -2,7 +2,12 @@
   src: url(fonts/source-sans-pro.bold.ttf);
   font-family: "source-sans-pro";
 }
-
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
 ul {
   font-family: "source-sans-pro";
   list-style-type: none;
@@ -15,6 +20,7 @@ ul {
 ul li a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 12px;
 }
 
 nav {
@@ -29,6 +35,8 @@ header {
 }
 body {
   background-image: url(images/Object.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 .container {
   text-align: center;
@@ -41,11 +49,168 @@ body {
   background-color: #c271ff;
   border-radius: 15px;
   border-style: none;
-  padding: 10px 5px;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-family: "source-sans-pro";
+  font-weight: lighter;
 }
 h1 {
   font-size: 120px;
+  margin-bottom: 10px;
+  font-family: "source-sans-pro";
 }
 div span {
   padding: 20px;
+  font-family: "source-sans-pro";
+}
+#btn_center {
+  margin: 30px auto 0;
+}
+.img_container {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.img_container h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.img_container > div {
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+  flex: 1;
+}
+
+.img_container > div > div {
+  text-align: center;
+}
+.img_container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img_container h3 {
+  margin-top: 10px;
+  color: #ffffff;
+}
+.img_container p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+.images {
+  margin-top: 100px;
+}
+.testimonials {
+  width: 100%;
+  height: 392px;
+  background-color: #c271ff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.profile_pic {
+  float: left;
+  margin: 30px;
+  padding: 10px;
+  margin-top: 100px;
+  margin-right: 50px;
+}
+.quote-text blockquote {
+  margin-left: 0px;
+}
+
+.quote-text {
+  /* text-align: center; */
+  margin-top: 100px;
+  font-size: 22px;
+  font-style: italic;
+  color: #fff;
+  width: 730px;
+  height: 158px;
+}
+/* This is the start of styling for the card - Tutorials */
+.card-container {
+  width: 1228px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card-container h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.card {
+  width: 255px;
+  height: 335px;
+}
+.img-small {
+  width: 30px;
+  height: 30px;
+}
+
+.stars {
+  display: flex;
+}
+.profile {
+  display: flex;
+  margin-bottom: 10px;
+}
+.profile h4 {
+  margin: 0px;
+}
+.profile img {
+  margin-right: 10px;
+}
+/* Start of styling for Membership Section */
+.membership {
+  width: 100%;
+  height: 502px;
+  background-color: #071629;
+}
+.membership h2 {
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;
+  padding: 20px;
+}
+.membership .descri {
+  display: flex;
+  justify-content: center;
+}
+.description {
+  width: 257px;
+  height: 153px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 26px;
+  margin: 15px;
+}
+.membership > button {
+  margin: 20px auto;
+  color: #ffffff;
+  background-color: #c271ff;
+  border-radius: 15px;
+  border-style: none;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-family: "source-sans-pro";
+  font-weight: lighter;
+  display: block;
+  margin-top: 50px;
 }
