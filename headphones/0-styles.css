@@ -1,0 +1,146 @@
+:root {
+  --whitecolor: #ffffff;
+  --orangecolor: #ff6565;
+  --backgroundcolor: #071629;
+
+  /* Fonts */
+  --sm: 12px;
+  --ms: 14px;
+  --md: 16px;
+  --lg: 32px;
+}
+@font-face {
+  src: url(assets/fonts/source-sans-pro/SourceSansPro-Bold.otf);
+  font-family: "source-sans-pro-bold";
+}
+@font-face {
+  font-family: "source-san-pro-light";
+  src: url(assets/fonts/source-sans-pro/SourceSansPro-Light.otf);
+}
+
+/* ---------------------------------------General Styles---------------------------- */
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+  background: url(assets/images/headphones_hero_1.jpg) fixed no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ---------------------------------------Nav Styles---------------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 41px;
+  list-style: none;
+
+  width: 255px;
+  height: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "source-sans-pro-bold";
+}
+a:hover,
+a:active,
+button {
+  color: #ff6565;
+  opacity: 0.9;
+}
+
+nav div img {
+  width: 161px;
+  height: 32px;
+}
+
+/* ---------------------------------------Container Styles---------------------------- */
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  color: var(--whitecolor);
+}
+main .container div h2 {
+  font-size: var(--lg);
+  font-family: "source-sans-pro-bold";
+}
+main .container div h4 {
+  font-size: var(--md);
+  font-family: "source-sans-pro-bold";
+}
+
+main .container div {
+  margin-bottom: 2em;
+  margin-top: 15em;
+}
+main .container .btn button {
+  width: 162px;
+  height: 44px;
+  border-radius: 10px;
+  border-radius: 22px;
+  border-style: none;
+  color: #ffffff;
+  font-family: "source-sans-pro-bold";
+  font-size: var(--ms);
+  text-align: center;
+  background-color: var(--orangecolor);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+main .container .btn {
+  margin-bottom: 3em;
+}
+
+main article p {
+  font-size: var(--md);
+  width: 637px;
+  height: 104px;
+  text-align: center;
+  font-family: "source-san-pro-light";
+  line-height: 1.5;
+}
+
+/* Media Query */
+@media (max-width: 480px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav div img {
+    margin: 0 auto;
+  }
+}
+
+/* ---------------------------------------Buttons  Styles---------------------------- */
+/* ---------------------------------------Image Styles---------------------------- */
