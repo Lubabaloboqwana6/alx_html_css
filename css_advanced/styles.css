@@ -1,13 +1,21 @@
 @font-face {
-  src: url(fonts/source-sans-pro.bold.ttf);
+  src: url(fonts/source-sans-pro/SourceSansPro-Bold.otf);
   font-family: "source-sans-pro";
 }
-body,
-html {
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
+@font-face {
+  src: url(fonts/source-sans-pro/SourceSansPro-Light.otf);
+  font-family: "source-sans-pro-light";
 }
+* {
+  font-family: "source-sans-pro", sans-serif;
+  background: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Section */
 ul {
   font-family: "source-sans-pro";
   list-style-type: none;
@@ -38,11 +46,34 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+/* Hero Section */
+
 .container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  color: #ffffff;
+  font-size: 120px;
+  line-height: 150px;
+  margin-bottom: 10px;
+  font-family: "source-sans-pro";
+}
+
+.span-container {
+  display: flex;
+  justify-content: space-between;
   color: #ffffff;
 }
-.container > button {
+
+.span-container span {
+  padding: 20px;
+  font-family: "source-sans-pro";
+}
+
+.btn {
   display: block;
   margin: 10px auto;
   color: #ffffff;
@@ -54,163 +85,264 @@ body {
   font-family: "source-sans-pro";
   font-weight: lighter;
 }
-h1 {
-  font-size: 120px;
-  margin-bottom: 10px;
-  font-family: "source-sans-pro";
-}
-div span {
-  padding: 20px;
-  font-family: "source-sans-pro";
-}
-#btn_center {
-  margin: 30px auto 0;
-}
+
+/* Learn from the pros section */
+
 .img_container {
-  text-align: center;
-  margin-top: 120px;
-  margin-bottom: 120px;
-}
-.img_container h2 {
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-.img_container > div {
   display: flex;
-  justify-content: center;
-
-  gap: 20px;
-  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
 }
 
-.img_container > div > div {
-  text-align: center;
-}
-.img_container img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+.img_container h2 span {
+  font-weight: bold;
+  color: #c271ff;
+  font-size: 32px;
+  font-family: "source-sans-pro";
 }
 
-.img_container h3 {
-  margin-top: 10px;
-  color: #ffffff;
-}
-.img_container p {
-  margin: 5px 0;
-  color: #ffffff;
+.img_container h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  font-family: "source-sans-pro-light";
 }
 .images {
-  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+  width: 1009px;
+  height: 237px;
 }
+
+.imgs {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 237px;
+  color: #ffffff;
+}
+
+.imgs img {
+  border-radius: 80px;
+}
+
+.imgs p {
+  line-height: 24px;
+  font-style: italic;
+}
+
+.first-section {
+  margin-bottom: 150px;
+}
+/* Testimonials Section */
 .testimonials {
-  width: 100%;
   height: 392px;
-  background-color: #c271ff;
-  padding: 50px 0;
   display: flex;
   justify-content: center;
-}
-.profile_pic {
-  float: left;
-  margin: 30px;
-  padding: 10px;
-  margin-top: 100px;
-  margin-right: 50px;
-}
-.quote-text blockquote {
-  margin-left: 0px;
+  flex-direction: row;
+  background-color: #c271ff;
 }
 
 .quote-text {
-  /* text-align: center; */
-  margin-top: 100px;
-  font-size: 22px;
-  font-style: italic;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 53px;
   width: 730px;
   height: 158px;
+  padding-top: 120px;
 }
-/* This is the start of styling for the card - Tutorials */
+
+.quote-text blockquote {
+  font-family: "source-sans-pro-light";
+  font-size: 22px;
+  line-height: 33px;
+}
+.quote-text h3 {
+  font: bold;
+  padding-top: 22px;
+}
+
+.quote-text p {
+  font-style: italic;
+  font-family: "source-sans-pro-light";
+}
+
+.profile_pic {
+  padding-top: 100px;
+}
+
+/* Tutorial Section */
 .card-container {
-  width: 1228px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  height: 450px;
+  margin: top 50px;
 }
 
 .card-container h2 {
-  width: 100%;
+  color: #071629;
+  font-size: 32;
+  margin-bottom: 70px;
+  font-weight: lighter;
+}
+
+.card-container h2 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+.h2-center {
   text-align: center;
-  margin-bottom: 40px;
+  padding-top: 50px;
 }
-.card-container {
+.tutorials {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
+  justify-content: space-around;
 }
+
 .card {
+  display: flex;
+  flex-direction: column;
   width: 255px;
   height: 335px;
+  /* margin-left: 16.5px;
+  margin-right: 16.5px; */
 }
-.img-small {
+
+.card h3 {
+  color: #071629;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 7.6px;
+  margin-left: 13px;
+}
+
+.card p {
+  color: #071629;
+  font-size: 14px;
+  margin-bottom: 7.6px;
+  margin: 0 13px;
+  margin-bottom: 13.4px;
+  opacity: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: 13px;
+}
+.profile h4 {
+  color: #c271ff;
+  font-size: 14px;
+  margin-left: 13px;
+}
+
+.profile img {
   width: 30px;
   height: 30px;
 }
-
 .stars {
   display: flex;
+  height: 27px;
+  margin-top: 14px;
+  margin-left: 13px;
+  margin-right: 22px;
 }
-.profile {
-  display: flex;
+
+.stars i {
+  color: #c271ff;
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
   margin-bottom: 10px;
 }
-.profile h4 {
-  margin: 0px;
+
+.stars p {
+  display: inline;
+  margin-left: auto;
+  font-size: 14px;
+  color: #c271ff;
+  opacity: 100%;
 }
-.profile img {
-  margin-right: 10px;
-}
-/* Start of styling for Membership Section */
+
+/* Membershipship section */
+
 .membership {
-  width: 100%;
   height: 502px;
   background-color: #071629;
-}
-.membership h2 {
-  width: 100%;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #ffffff;
-  padding: 20px;
-}
-.membership .descri {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.membership h2 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.membership h2 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.descri {
+  display: flex;
+  justify-content: space-around;
 }
 .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 257px;
   height: 153px;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 50px;
-  line-height: 26px;
-  margin: 15px;
 }
-.membership > button {
-  margin: 20px auto;
-  color: #ffffff;
-  background-color: #c271ff;
-  border-radius: 15px;
-  border-style: none;
-  padding: 15px 10px;
+
+.description img {
+  width: 43px;
+  height: 35px;
+  margin-bottom: 26px;
+}
+
+.description h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.description p {
   font-size: 14px;
-  font-family: "source-sans-pro";
-  font-weight: lighter;
-  display: block;
+  text-align: center;
+  margin: 0 22.5px;
+}
+
+#btn-center {
+  margin-top: 40px;
+}
+
+/* FAQ Section */
+.faq {
+  height: 707px;
   margin-top: 50px;
+}
+
+.faq-title {
+  text-align: center;
+  color: #071629;
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: "source-sans-pro-light";
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 920px;
+  height: 558px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
 }
